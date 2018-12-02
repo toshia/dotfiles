@@ -40,6 +40,7 @@ task :config ,%i[name] do |task, args|
     w << YAML.dump([*CONFIG_FILES, name].sort)
   end
   system "git add config_files.yml"
+  system "git commit -m 'add #{name}'"
 end
 
 desc "add dotfile"
@@ -55,4 +56,5 @@ task :dot ,%i[name] do |task, args|
     w << YAML.dump([*DOT_FILES, name].sort)
   end
   system "git add dot_files.yml"
+  system "git commit -m 'add #{name}'"
 end
