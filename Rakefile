@@ -5,6 +5,7 @@ require 'pathname'
 require 'yaml'
 
 CUR = Pathname(__dir__)
+SRC = CUR/'src'
 HOME = Pathname(Dir.home)
 CONFIG = HOME/'.config'
 
@@ -14,14 +15,14 @@ DOT_FILES = YAML.load_file(CUR/'dot_files.yml')
 CONFIG_FILES.each do |dirname|
   desc "Generate ~/.config/#{dirname}/"
   file CONFIG/dirname do
-    symlink CUR/dirname, CONFIG/dirname
+    symlink SRC/dirname, CONFIG/dirname
   end
 end
 
 DOT_FILES.each do |filename|
   desc "Generate ~/.#{filename}"
   file HOME/".#{filename}" do
-    symlink CUR/filename, HOME/".#{filename}"
+    symlink SRC/filename, HOME/".#{filename}"
   end
 end
 
@@ -35,7 +36,7 @@ desc "add .config/"
 task :config ,%i[name] do |task, args|
   name = args[:name]
   abort 'file exists.' if CONFIG_FILES.include?(name)
-  src, dst = CONFIG/name, CUR/name
+  src, dst = CONFIG/name, SRC/name
   mv src, dst
   symlink dst, src
   system "git add #{name}/"
@@ -50,7 +51,7 @@ desc "add dotfile"
 task :dot ,%i[name] do |task, args|
   name = args[:name]
   abort 'file exists.' if DOT_FILES.include?(name)
-  src, dst = HOME/".#{name}", CUR/name
+  src, dst = HOME/".#{name}", SRC/name
   mv src, dst
   symlink dst, src
   system "git add #{name}"
@@ -59,4 +60,15 @@ task :dot ,%i[name] do |task, args|
   end
   system "git add dot_files.yml"
   system "git commit -m 'add #{name}'"
+end
+
+desc "remove all symlink to dotfiles"
+task :remove => %i[remove_config_files remove_dot_files]
+
+task :remove_config_files do
+  CONFIG_FILES.map(&CONFIG.method(:/)).select(&:symlink?).each(&method(:rm))
+end
+
+task :remove_dot_files do
+  DOT_FILES.map{|f| HOME/".#{f}" }.select(&:symlink?).each(&method(:rm))
 end
