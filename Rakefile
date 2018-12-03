@@ -40,7 +40,6 @@ task :config ,%i[name] do |task, args|
   symlink dst, src
   system "git add #{name}/"
   File.open(CUR/'config_files.yml', 'w') do |w|
-    pp [*CONFIG_FILES, name]
     w << YAML.dump([*CONFIG_FILES, name].sort)
   end
   system "git add config_files.yml"
@@ -56,7 +55,6 @@ task :dot ,%i[name] do |task, args|
   symlink dst, src
   system "git add #{name}"
   File.open(CUR/'dot_files.yml', 'w') do |w|
-    pp [*DOT_FILES, name]
     w << YAML.dump([*DOT_FILES, name].sort)
   end
   system "git add dot_files.yml"
