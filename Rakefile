@@ -25,7 +25,11 @@ DOT_FILES.each do |filename|
   end
 end
 
-task :default => CONFIG_FILES.map(&CONFIG.method(:/)).map(&:to_s)
+task :default => %i[config_files dot_files]
+
+task config_files: CONFIG_FILES.map(&CONFIG.method(:/)).map(&:to_s)
+
+task dot_files: DOT_FILES.map{|f| HOME./(".#{f}").to_s }
 
 desc "add .config/"
 task :config ,%i[name] do |task, args|
