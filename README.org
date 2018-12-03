@@ -1,0 +1,51 @@
+#+TITLE: toshi_a's dotfiles
+
+* 使い方
+** 初期設定
+
+   #+BEGIN_SRC sh
+git clone https://github.com/toshia/dotfiles.git ~/Project/dotfiles
+cd ~/Project/dotfiles
+rake
+   #+END_SRC
+
+** 設定一覧
+
+   #+BEGIN_SRC sh
+rake -T
+   #+END_SRC
+
+** 特定のファイルだけインストール
+
+   #+BEGIN_SRC sh
+rake /home/toshi/.config/i3
+   #+END_SRC
+
+** 新しいファイルを管理下に置く
+   以下のコマンドを実行すると:
+   - 対象ファイルをこのリポジトリにコピー
+   - 元あった場所にsymlinkを設置
+   - rakeタスクとしてそのファイルを追加
+   - 必要なファイル群をstage
+   - commit
+
+   を行う。
+*** $HOME/.*
+
+    =~/.foobar= を管理下に置く場合
+
+    #+BEGIN_SRC sh
+rake 'dot[foobar]'
+    #+END_SRC
+
+*** $HOME/.config/*
+
+    =~/.config/foobar/= を管理下に置く場合
+
+    #+BEGIN_SRC sh
+rake 'config[foobar]'
+    #+END_SRC
+
+    この場合、 =~/.config/foobar/= 以下のファイルすべてがcommitされるので余計なものが入らないように気をつける。
+
+    いらんものがあったら =.gitignore= をそのディレクトリに追加して自動コミットされたファイルをいい感じにあれする
