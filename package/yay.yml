@@ -1,0 +1,6 @@
+---
+install: 'yay -S --needed %s'
+package:
+- fzf
+- emacs
+- xfce4-terminal

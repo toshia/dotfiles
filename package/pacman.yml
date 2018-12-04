@@ -1,0 +1,3 @@
+---
+install: sudo pacman -S --needed %s
+package: []
