@@ -1,6 +1,9 @@
 ---
-install: 'yay -S --needed %s'
+install: yay -S --needed %s
 package:
-- fzf
+- dex
 - emacs
+- fzf
+- rofi
+- xclip
 - xfce4-terminal
