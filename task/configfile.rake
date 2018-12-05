@@ -19,7 +19,7 @@ task :config ,%i[name] do |task, args|
   src, dst = CONFIG/name, SRC/name
   mv src, dst
   symlink dst, src
-  system "git add #{name}/"
+  system "git add #{SRC/name}"
   File.open(CUR/'config_files.yml', 'w') do |w|
     w << YAML.dump([*CONFIG_FILES, name].sort)
   end

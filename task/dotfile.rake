@@ -19,7 +19,7 @@ task :dot ,%i[name] do |task, args|
   src, dst = HOME/".#{name}", SRC/name
   mv src, dst
   symlink dst, src
-  system "git add #{name}"
+  system "git add #{SRC/name}"
   File.open(CUR/'dot_files.yml', 'w') do |w|
     w << YAML.dump([*DOT_FILES, name].sort)
   end
