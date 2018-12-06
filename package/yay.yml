@@ -2,6 +2,7 @@
 install: yay -S --needed %s
 package:
 - dex
+- docker
 - emacs
 - fzf
 - rofi
