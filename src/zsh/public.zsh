@@ -24,6 +24,7 @@ require prompt
 require env/rbenv
 require env/ruby
 require fzf
+require docker
 
 if [ $platform = "Darwin" ]; then
 	require mac/public
