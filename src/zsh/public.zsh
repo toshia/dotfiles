@@ -23,6 +23,7 @@ require aliases
 require prompt
 require env/rbenv
 require env/ruby
+require fzf
 
 if [ $platform = "Darwin" ]; then
 	require mac/public
