@@ -9,6 +9,7 @@ package:
 - fzf
 - lightdm
 - lightdm-gtk-greeter
+- gnu-netcat
 - ripgrep
 - rofi
 - xclip
