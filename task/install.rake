@@ -16,6 +16,8 @@ namespace :install do
         f.open('w') do |w|
           w << YAML.dump(spec)
         end
+        system 'git', 'add', f.to_s
+        system 'git', 'commit', '-m', "[#{name}] add #{packages.join(', ')}"
         warn 'install succeed.'
       else
         warn 'install failed.'
