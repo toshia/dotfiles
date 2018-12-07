@@ -1,10 +1,13 @@
 ---
 install: yay -S --needed %s
 package:
+- aws-cli
 - dex
 - docker
+- docker-compose
 - emacs
 - fzf
+- ripgrep
 - rofi
 - xclip
 - xfce4-terminal
