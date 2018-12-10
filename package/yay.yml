@@ -18,5 +18,6 @@ package:
 - unarchiver
 - xclip
 - xfce4-terminal
+- xorg-xprop
 - zathura
 - zathura-pdf-poppler
