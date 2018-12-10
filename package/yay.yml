@@ -5,6 +5,7 @@ package:
 - dex
 - docker
 - docker-compose
+- dunst
 - emacs
 - fzf
 - gnu-netcat
