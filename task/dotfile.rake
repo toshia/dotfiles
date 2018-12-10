@@ -24,7 +24,7 @@ task :dot ,%i[name] do |task, args|
     w << YAML.dump([*DOT_FILES, name].sort)
   end
   system "git add dot_files.yml"
-  system "git commit -m 'add #{name}'"
+  system "git commit -m '[#{name}] added'"
 end
 
 task :remove_dot_files do

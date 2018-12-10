@@ -24,7 +24,7 @@ task :config ,%i[name] do |task, args|
     w << YAML.dump([*CONFIG_FILES, name].sort)
   end
   system "git add config_files.yml"
-  system "git commit -m 'add #{name}'"
+  system "git commit -m '[#{name}] added'"
 end
 
 task :remove_config_files do
