@@ -8,6 +8,7 @@ package:
 - emacs
 - fzf
 - gnu-netcat
+- jq
 - libreoffice-still
 - lightdm
 - lightdm-gtk-greeter
