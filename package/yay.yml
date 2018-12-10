@@ -13,5 +13,6 @@ package:
 - lightdm-gtk-greeter
 - ripgrep
 - rofi
+- unarchiver
 - xclip
 - xfce4-terminal
