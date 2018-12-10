@@ -7,9 +7,10 @@ package:
 - docker-compose
 - emacs
 - fzf
+- gnu-netcat
+- libreoffice-still
 - lightdm
 - lightdm-gtk-greeter
-- gnu-netcat
 - ripgrep
 - rofi
 - xclip
