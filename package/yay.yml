@@ -3,6 +3,7 @@ install: yay -S --needed %s
 package:
 - aws-cli
 - dconf-editor
+- deepin-screenshot
 - dex
 - docker
 - docker-compose
