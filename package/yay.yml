@@ -9,6 +9,7 @@ package:
 - docker-compose
 - dunst
 - emacs
+- fish
 - fzf
 - gnu-netcat
 - jq
