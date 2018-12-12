@@ -1,5 +1,5 @@
 ! Rofi config file
-rofi.font: Myrica M 48
+rofi.font: Myrica M 24
 rofi.show-icons: true
 rofi.theme: ~/.config/rofi/oxide.rasi
 rofi.display-window: Window
