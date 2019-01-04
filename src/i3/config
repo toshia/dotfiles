@@ -121,7 +121,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 bindsym $mod+Control+4 exec "deepin-screenshot"
 
-bindsym $mod+Control+1 exec "xrandr --output DisplayPort-2 --auto --pos 0x420 --output DisplayPort-0 --auto --rotate left --pos 1920x0"
+bindsym $mod+Control+1 exec "xrandr --auto"
+
+bindsym $mod+Control+2 exec "xrandr --output eDP --off --output DisplayPort-2 --auto --pos 0x420 --output DisplayPort-0 --auto --rotate left --pos 1920x0"
 
 bindsym $mod+Control+L exec "dm-tool switch-to-greeter"
 
