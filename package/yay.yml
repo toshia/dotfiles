@@ -16,6 +16,7 @@ package:
 - libreoffice-still
 - lightdm
 - lightdm-gtk-greeter
+- nkf
 - ripgrep
 - rofi
 - unarchiver
