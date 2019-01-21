@@ -20,6 +20,7 @@ package:
 - ripgrep
 - rofi
 - unarchiver
+- unzip
 - xclip
 - xfce4-terminal
 - xorg-xprop
