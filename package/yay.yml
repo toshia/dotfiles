@@ -21,6 +21,7 @@ package:
 - rofi
 - unarchiver
 - unzip
+- unzip-iconv
 - xclip
 - xfce4-terminal
 - xorg-xprop
