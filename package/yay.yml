@@ -20,7 +20,6 @@ package:
 - ripgrep
 - rofi
 - unarchiver
-- unzip
 - unzip-iconv
 - xclip
 - xfce4-terminal
