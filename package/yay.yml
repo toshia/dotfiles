@@ -13,6 +13,7 @@ package:
 - fish
 - fzf
 - gnu-netcat
+- go
 - jq
 - libreoffice-still
 - lightdm
