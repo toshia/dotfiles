@@ -19,6 +19,7 @@ package:
 - lightdm
 - lightdm-gtk-greeter
 - nkf
+- nnn
 - ripgrep
 - rofi
 - unarchiver
