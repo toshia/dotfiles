@@ -1,4 +1,5 @@
 ---
 install: go get %s
 package:
+- github.com/reviewdog/reviewdog/cmd/reviewdog
 - github.com/rogpeppe/godef
