@@ -1,0 +1,4 @@
+---
+install: go get %s
+package:
+- github.com/rogpeppe/godef
