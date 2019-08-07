@@ -1,5 +1,6 @@
 ---
 install: go get %s
 package:
+- github.com/golangci/golangci-lint/cmd/golangci-lint
 - github.com/reviewdog/reviewdog/cmd/reviewdog
 - github.com/rogpeppe/godef
