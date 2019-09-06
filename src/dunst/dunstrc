@@ -41,10 +41,9 @@
     mouse_right_click = close_all
 
 [shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
-    history = ctrl+grave
-    context = ctrl+shift+period
+    close = mod3+backslash
+    close_all = mod3+shift+backslash
+    history = mod3+grave
 
 [urgency_low]
     background = "#232323"
