@@ -18,6 +18,7 @@ package:
 - libreoffice-still
 - lightdm
 - lightdm-gtk-greeter
+- lsd
 - nkf
 - nnn
 - ripgrep
