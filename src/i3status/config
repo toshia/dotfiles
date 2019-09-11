@@ -8,7 +8,7 @@
 
 general {
         colors = true
-        interval = 5
+        interval = 1
 }
 
 #order += "ipv6"
@@ -16,6 +16,7 @@ order += "disk /"
 #order += "wireless _first_"
 order += "ethernet _first_"
 #order += "battery all"
+order += "memory"
 order += "load"
 order += "tztime local"
 
@@ -44,4 +45,10 @@ load {
 
 disk "/" {
         format = "%avail"
+}
+
+memory {
+       format = "%percentage_used (%used)"
+       threshold_degraded = "30%"
+       threshold_critical = "20%"
 }
