@@ -183,13 +183,6 @@ format-underline = #0a6cf5
 
 label = %date% %time%
 
-[module/cpu_load]
-type = custom/script
-exec = ~/.config/polybar/scripts/cpuloadavg.sh
-format-underline = #f50a4d
-
-interval = 5
-
 [module/powermenu]
 type = custom/menu
 
