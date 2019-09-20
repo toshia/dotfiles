@@ -40,7 +40,7 @@ font-4 = FontAwesome:weight=regular:pixelsize=16;1
 
 modules-left = powermenu i3
 modules-center = date
-modules-right = eth cpu temperature memory filesystem cpu_load
+modules-right = eth cpu temperature fan memory filesystem
 
 tray-position = right
 tray-padding = 1
@@ -58,6 +58,13 @@ warn-temperature = 70
 label-warn-foreground = #f00
 label-warn-underline = #ff002a
 label-underline = #ffb52a
+
+[module/fan]
+type = custom/script
+exec = ~/.config/polybar/scripts/fan.sh
+format-underline = #f50af5
+format-prefix = ☢
+interval = 1
 
 [module/filesystem]
 type = internal/fs
