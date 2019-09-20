@@ -109,7 +109,7 @@ label-urgent-padding = 1
 type = internal/cpu
 interval = 0.1
 format-underline = #f90000
-format = <label> <ramp-coreload>
+format = <ramp-coreload>
 label = %percentage:2%%
 
 ramp-coreload-spacing = 1
