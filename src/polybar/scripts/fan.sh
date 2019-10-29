@@ -1,3 +1,12 @@
-#! /bin/sh
-FAN2=$(sensors -j nct6791-isa-0290 | jq '.["nct6791-isa-0290"]["fan2"]["fan2_input"]')
-echo "${FAN2}"
+#! /bin/fish
+set left (sensors -j applesmc-isa-0300 | jq '.["applesmc-isa-0300"]["Left side  "]["fan1_input"]')
+set right (sensors -j applesmc-isa-0300 | jq '.["applesmc-isa-0300"]["Right side "]["fan2_input"]')
+set speed (math "($left + $right)/2")
+set icon "🎐"
+if [ $speed -ge 3000 ]
+    set icon "🌪"
+else if [ $speed -ge 2500 ]
+    set icon "🍃"
+end
+
+echo $left"RPM "$icon" "$right"RPM"
