@@ -48,9 +48,9 @@ tray-detached = false
 tray-transparent = false
 tray-background = #aa000000
 
-[bar/DisplayPort-0]
+[bar/Shibafu]
 dpi = ${xrdb:Xft.dpi:-1}
-monitor = DisplayPort-0
+monitor = Shibafu
 width = 100%
 height = 30
 radius = 0.0

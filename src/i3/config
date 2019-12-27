@@ -125,9 +125,9 @@ bindsym $mod+Control+1 exec "xrandr --auto && $HOME/.config/polybar/launch.sh"
 
 bindsym $mod+Control+2 exec "xrandr --output eDP --mode 1440x900 --auto --output DisplayPort-2 --off && $HOME/.config/polybar/launch.sh"
 
-bindsym $mod+Control+3 exec "xrandr --output DisplayPort-0 --auto --pos 0x0 --primary --output eDP --mode 1440x900 --auto --pos 1922x90 && $HOME/.config/polybar/launch.sh"
+bindsym $mod+Control+3 exec "xrandr --setmonitor Shibafu auto DisplayPort-0,DisplayPort-2 --output DisplayPort-0 --rotate left --pos 0x0 --output DisplayPort-2 --right-of DisplayPort-0 --rotate left --output eDP --mode 1440x900 --pos 2160x1344 && $HOME/.config/polybar/launch.sh"
 
-#bindsym $mod+Control+3 exec "xrandr --output eDP --off --output DisplayPort-2 --auto --pos 0x420 --output DisplayPort-0 --auto --rotate left --pos 1920x0"
+#bindsym $mod+Control+3 exec "xrandr --output eDP --off --output DisplayPort-0 --auto --pos 0x420 --output DisplayPort-2 --auto --rotate left --pos 1920x0"
 
 bindsym $mod+Control+L exec "dm-tool switch-to-greeter"
 
