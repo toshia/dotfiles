@@ -1,1 +1,9 @@
 __*.fish
+ecs-events.fish
+watch-ecs-events.fish
+r*_login.fish
+get.fish
+post.fish
+put.fish
+request.fish
+delete.fish

@@ -10,6 +10,8 @@ package:
 - dunst
 - emacs
 - exa
+- fcitx-im
+- fcitx-mozc
 - fish
 - fzf
 - gnu-netcat
