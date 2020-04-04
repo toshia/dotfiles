@@ -11,6 +11,8 @@ package:
 - dunst
 - emacs
 - exa
+- fcitx-im
+- fcitx-mozc
 - fish
 - fzf
 - gnu-netcat
@@ -31,6 +33,7 @@ package:
 - ripgrep
 - rofi
 - syntax-highlighting
+- tmux
 - unarchiver
 - unzip-iconv
 - xclip
