@@ -2,6 +2,7 @@
 install: yay -S --needed %s
 package:
 - aws-cli
+- cmake
 - dconf-editor
 - deepin-screenshot
 - dex
@@ -16,6 +17,7 @@ package:
 - fzf
 - gnu-netcat
 - go
+- grpc
 - grpcurl
 - jq
 - libreoffice-still
@@ -24,9 +26,13 @@ package:
 - lsd
 - nkf
 - nnn
+- plantuml
 - polybar
+- protobuf
+- qt5-base
 - ripgrep
 - rofi
+- syntax-highlighting
 - tmux
 - unarchiver
 - unzip-iconv
