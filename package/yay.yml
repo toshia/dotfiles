@@ -2,6 +2,7 @@
 install: yay -S --needed %s
 package:
 - aws-cli
+- blueman
 - bluez
 - bluez-utils
 - cmake
