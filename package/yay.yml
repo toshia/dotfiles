@@ -2,6 +2,8 @@
 install: yay -S --needed %s
 package:
 - aws-cli
+- bluez
+- bluez-utils
 - cmake
 - dconf-editor
 - deepin-screenshot
