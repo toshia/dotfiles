@@ -11,8 +11,12 @@ alert = #bd2c40
 [bar/DP-1]
 dpi = ${xrdb:Xft.dpi:-1}
 monitor = DP-1
+
+[bar/bottom]
+dpi = ${xrdb:Xft.dpi:-1}
+monitor = DisplayPort-0
 width = 100%
-height = 45
+height = 2.7%
 radius = 0.0
 fixed-center = true
 bottom = true
@@ -72,12 +76,8 @@ module-margin-right = 2
 
 font-0 = Ohruri:weight=regular:pixelsize=12;2
 font-1 = Noto Color Emoji:pixelsize=12:size=12:scale=10;2
-# font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-# font-2 = Iosevka Term:weight=regular:pixelsize=12;1
-# font-3 = Iosevka Term:weight=bold:pixelsize=12;1
-# font-4 = FontAwesome:weight=regular:pixelsize=12;1
 
-modules-left = powermenu i3
+modules-left = powermenu i3 wc
 modules-center = date
 modules-right = eth wifi cpu temperature fan memory filesystem battery
 
@@ -86,6 +86,12 @@ tray-padding = 1
 tray-detached = false
 tray-transparent = false
 tray-background = #aa000000
+
+[module/wc]
+type = custom/script
+exec = ~/.config/polybar/scripts/wc.sh
+format-underline = #f50af5
+interval = 60
 
 [module/temperature]
 type = internal/temperature
@@ -114,11 +120,6 @@ type = internal/temperature
 interval = 1
 thermal-zone = 0
 hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp2_input
-base-temperature = 50
-warn-temperature = 70
-label-warn-foreground = #f00
-label-warn-underline = #ff002a
-label-underline = #ffb52a
 
 [module/temperature_seminole3]
 type = internal/temperature
