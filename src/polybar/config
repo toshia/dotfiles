@@ -38,7 +38,7 @@ font-2 = Noto Color Emoji:pixelsize=12:size=12:scale=10;2
 
 modules-left = powermenu i3
 modules-center = date
-modules-right = eth_seminole cpu temperature_seminole fan_seminole memory filesystem
+modules-right = eth_seminole cpu temperature_seminole1 temperature_seminole2 temperature_seminole3 temperature_seminole4 temperature_seminole5 temperature_seminole_gpu fan_seminole memory filesystem
 
 tray-position = right
 tray-padding = 1
@@ -98,11 +98,66 @@ label-warn-foreground = #f00
 label-warn-underline = #ff002a
 label-underline = #ffb52a
 
-[module/temperature_seminole]
+[module/temperature_seminole1]
 type = internal/temperature
 interval = 1
 thermal-zone = 0
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
+base-temperature = 50
+warn-temperature = 70
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
+
+[module/temperature_seminole2]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp2_input
+base-temperature = 50
+warn-temperature = 70
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
+
+[module/temperature_seminole3]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp3_input
+base-temperature = 50
+warn-temperature = 70
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
+
+[module/temperature_seminole4]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp4_input
+base-temperature = 50
+warn-temperature = 70
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
+
+[module/temperature_seminole5]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp5_input
+base-temperature = 50
+warn-temperature = 70
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
+
+[module/temperature_seminole_gpu]
+type = internal/temperature
+interval = 1
+thermal-zone = 0
+hwmon-path = /sys/devices/platform/nct6775.656/hwmon/hwmon4/temp1_input
 base-temperature = 50
 warn-temperature = 70
 label-warn-foreground = #f00
