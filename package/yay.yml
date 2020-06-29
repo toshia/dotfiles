@@ -42,5 +42,6 @@ package:
 - xorg-server
 - xorg-xmodmap
 - xorg-xprop
+- xorg-xrandr
 - zathura
 - zathura-pdf-poppler
