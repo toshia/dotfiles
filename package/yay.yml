@@ -27,6 +27,7 @@ package:
 - nkf
 - nnn
 - plantuml
+- plymouth
 - polybar
 - protobuf
 - qt5-base
