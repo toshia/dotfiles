@@ -17,6 +17,7 @@ package:
 - fzf
 - gnu-netcat
 - go
+- gobject-introspection-runtime
 - grpc
 - grpcurl
 - jq
