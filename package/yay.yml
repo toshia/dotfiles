@@ -35,6 +35,7 @@ package:
 - rofi
 - syntax-highlighting
 - tmux
+- ttf-myrica
 - unarchiver
 - unzip-iconv
 - vivaldi
