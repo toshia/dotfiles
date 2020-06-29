@@ -37,6 +37,7 @@ package:
 - tmux
 - unarchiver
 - unzip-iconv
+- vivaldi
 - xclip
 - xfce4-terminal
 - xorg-server
