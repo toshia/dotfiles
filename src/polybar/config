@@ -8,9 +8,9 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/DP-1]
+[bar/DP-4]
 dpi = ${xrdb:Xft.dpi:-1}
-monitor = DP-1
+monitor = DP-4
 width = 100%
 height = 45
 radius = 0.0
