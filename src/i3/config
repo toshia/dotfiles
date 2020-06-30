@@ -36,7 +36,8 @@ bindsym $mod+Alt_L exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec "rofi -modi combi -show combi -combi-modi window,run,drun -matching fuzzy"
+bindsym $mod+d exec "systemd-run --user --scope -p 'Delegate=memory pids' -p MemoryLimit=21G rofi -modi combi -show combi -combi-modi window,run,drun -matching fuzzy"
+bindsym $mod+Shift+d exec "rofi -modi combi -show combi -combi-modi window,run,drun -matching fuzzy"
 
 # change focus
 bindsym $mod+j focus left
