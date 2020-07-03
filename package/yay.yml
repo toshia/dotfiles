@@ -20,6 +20,7 @@ package:
 - fzf
 - gnu-netcat
 - go
+- gobject-introspection-runtime
 - grpc
 - grpcurl
 - jq
@@ -30,6 +31,7 @@ package:
 - nkf
 - nnn
 - plantuml
+- plymouth
 - polybar
 - protobuf
 - pulseaudio-bluetooth
@@ -38,10 +40,16 @@ package:
 - rofi
 - syntax-highlighting
 - tmux
+- ttf-myrica
 - unarchiver
 - unzip-iconv
+- vivaldi
 - xclip
 - xfce4-terminal
+- xorg-server
+- xorg-xmodmap
 - xorg-xprop
+- xorg-xrandr
+- xorg-xrdb
 - zathura
 - zathura-pdf-poppler
