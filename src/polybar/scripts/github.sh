@@ -1,6 +1,6 @@
 #! /bin/fish
 
-set github_status (jq -r '.status.indicator + "\n" + .status.description' /tmp/github-status.json)
+set github_status (curl -s https://kctbh9vrtdwd.statuspage.io/api/v2/status.json | jq -r '.status.indicator + "\n" + .status.description')
 switch $github_status[1]
     case 'none'
         echo '✅'
