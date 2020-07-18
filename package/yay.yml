@@ -30,6 +30,7 @@ package:
 - lsd
 - nkf
 - nnn
+- noto-fonts-emoji
 - plantuml
 - plymouth
 - polybar
