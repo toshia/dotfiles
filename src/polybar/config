@@ -32,13 +32,14 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Iosevka Term:weight=regular:pixelsize=12;2
-font-1 = Myrica M:weight=regular:pixelsize=12;2
-font-2 = Noto Color Emoji:pixelsize=12:size=12:scale=10;2
+font-0 = Sans:weight=regular:pixelsize=16;2
+font-1 = Noto Color Emoji:pixelsize=12:size=12:scale=10;2
+font-2 = Font Awesome 5 Free:weight=regular:pixelsize=16;2
+font-3 = FontAwesome:weight=regular:pixelsize=16;2
 
-modules-left = powermenu i3
+modules-left = powermenu i3 github
 modules-center = date
-modules-right = eth_seminole cpu temperature_seminole_cpu temperature_seminole_cpu2 temperature_seminole_gpu memory filesystem
+modules-right = cpu temperature_seminole_cpu temperature_seminole_ssd temperature_seminole_backup_hdd temperature_seminole_gpu memory filesystem
 
 tray-position = right
 tray-padding = 1
@@ -122,17 +123,6 @@ label-warn-foreground = #f00
 label-warn-underline = #ff002a
 label-underline = #ffb52a
 
-[module/temperature_seminole_cpu2]
-type = internal/temperature
-interval = 1
-thermal-zone = 0
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp2_input
-base-temperature = 50
-warn-temperature = 70
-label-warn-foreground = #f00
-label-warn-underline = #ff002a
-label-underline = #ffb52a
-
 [module/temperature_seminole_gpu]
 type = custom/script
 tail = true
@@ -153,6 +143,26 @@ type = custom/script
 exec = ~/.config/polybar/scripts/fan_seminole.sh
 format-underline = #f50af5
 interval = 1
+
+[module/temperature_seminole_ssd]
+type = custom/script
+tail = true
+exec = ~/.config/polybar/scripts/hddtemp.sh /dev/sdc
+label = "%output%℃"
+label-font = 1
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
+
+[module/temperature_seminole_backup_hdd]
+type = custom/script
+tail = true
+exec = ~/.config/polybar/scripts/hddtemp.sh /dev/sdb
+label = "%output%℃"
+label-font = 1
+label-warn-foreground = #f00
+label-warn-underline = #ff002a
+label-underline = #ffb52a
 
 [module/github]
 type = custom/script
@@ -207,7 +217,7 @@ format-underline = #f90000
 format = <ramp-coreload>
 label = %percentage:2%%
 
-ramp-coreload-spacing = 1
+ramp-coreload-spacing = 0
 ramp-coreload-0 = ▁
 ramp-coreload-1 = ▂
 ramp-coreload-2 = ▃
@@ -229,7 +239,7 @@ ramp-coreload-7-foreground = #f00
 type = internal/memory
 interval = 2
 format = <label> <bar-used>
-label = RAM
+label = 
 label-foreground = ${root.foreground}
 
 bar-used-width = 35
@@ -247,7 +257,7 @@ bar-used-font = 2
 bar-used-indicator-foreground = #ff
 bar-used-fill = |
 bar-used-fill-font = 2
-bar-used-empty = -
+bar-used-empty = |
 bar-used-empty-font = 2
 bar-used-empty-foreground = ${colors.foreground-alt}
 
@@ -265,13 +275,13 @@ label-disconnected-foreground = #66ffff
 
 [module/eth_seminole]
 type = internal/network
-interface = eth0
+interface = enp4s0
 interval = 1.0
 
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-font = 4
-label-connected = %local_ip% ⇧%upspeed% ⇩%downspeed%
+label-connected = %local_ip% %{T4}⇧%{T-}%upspeed% ⇩%downspeed%
 label-connected-foreground = #eefafa
 label-disconnected-foreground = #66ffff
 
@@ -342,12 +352,12 @@ type = custom/menu
 
 format-spacing = 1
 
-label-open = "  "
-label-open-font = 0
+label-open = ""
+label-open-font = 3
 label-open-background = ${colors.background}
 label-open-foreground = ${colors.secondary}
-label-close = "  Cancel"
-label-close-font = 0
+label-close = " Cancel"
+label-close-font = 3
 label-close-background = ${colors.background}
 label-close-foreground = ${colors.secondary}
 label-separator = |
@@ -356,18 +366,21 @@ label-separator-foreground = ${colors.foreground-alt}
 menu-0-0 = Reboot
 menu-0-0-font = 0
 menu-0-0-exec = menu-open-1
-menu-0-1 = Power Off
+menu-0-1 = Logout
 menu-0-1-font = 0
-menu-0-1-exec = menu-open-2
-menu-0-2 = Hibernate
+menu-0-1-exec = menu-open-6
+menu-0-2 = Power Off
 menu-0-2-font = 0
-menu-0-2-exec = menu-open-3
-menu-0-3 = Lock
+menu-0-2-exec = menu-open-2
+menu-0-3 = Hibernate
 menu-0-3-font = 0
-menu-0-3-exec = menu-open-4
-menu-0-4 = Suspend
+menu-0-3-exec = menu-open-3
+menu-0-4 = Lock
 menu-0-4-font = 0
-menu-0-4-exec = menu-open-5
+menu-0-4-exec = menu-open-4
+menu-0-5 = Suspend
+menu-0-5-font = 0
+menu-0-5-exec = menu-open-5
 
 menu-1-0 = Reboot
 menu-1-0-font = 0
@@ -403,6 +416,13 @@ menu-5-0-exec = systemctl suspend && i3lock --color "#000000" && sleep 1
 menu-5-1 = Cancel
 menu-5-1-font = 0
 menu-5-1-exec = menu-open-0
+
+menu-6-0 = Logout
+menu-6-0-font = 0
+menu-6-0-exec = loginctl terminate-user `whoami`
+menu-6-1 = Cancel
+menu-6-1-font = 0
+menu-6-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
