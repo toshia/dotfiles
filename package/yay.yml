@@ -23,6 +23,7 @@ package:
 - gobject-introspection-runtime
 - grpc
 - grpcurl
+- gvfs
 - jq
 - libreoffice-still
 - lightdm
