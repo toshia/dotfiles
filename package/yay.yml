@@ -24,6 +24,7 @@ package:
 - grpc
 - grpcurl
 - gvfs
+- gvfs-google
 - jq
 - libreoffice-still
 - lightdm
