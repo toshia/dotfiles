@@ -21,6 +21,7 @@ package:
 - gnu-netcat
 - go
 - gobject-introspection-runtime
+- graphviz
 - grpc
 - grpcurl
 - gvfs
