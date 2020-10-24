@@ -34,11 +34,14 @@ package:
 - plantuml
 - plymouth
 - polybar
+- powerpill
 - protobuf
 - pulseaudio-bluetooth
 - qt5-base
+- reflector
 - ripgrep
 - rofi
+- rsync
 - syntax-highlighting
 - tmux
 - ttf-myrica
