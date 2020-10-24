@@ -147,7 +147,7 @@ interval = 1
 [module/temperature_seminole_ssd]
 type = custom/script
 tail = true
-exec = ~/.config/polybar/scripts/hddtemp.sh /dev/sdc
+exec = ~/.config/polybar/scripts/hddtemp.sh /dev/disk/by-id/ata-WDC_WDS500G2B0B-00YS70_20156J445703
 label = "%output%℃"
 label-font = 1
 label-warn-foreground = #f00
@@ -157,7 +157,7 @@ label-underline = #ffb52a
 [module/temperature_seminole_backup_hdd]
 type = custom/script
 tail = true
-exec = ~/.config/polybar/scripts/hddtemp.sh /dev/sdb
+exec = ~/.config/polybar/scripts/hddtemp.sh /dev/disk/by-id/ata-WDC_WD40EFRX-68N32N0_WD-WCC7K6LDF5E3
 label = "%output%℃"
 label-font = 1
 label-warn-foreground = #f00
@@ -352,11 +352,11 @@ type = custom/menu
 
 format-spacing = 1
 
-label-open = ""
+label-open = "  スタート"
 label-open-font = 3
 label-open-background = ${colors.background}
-label-open-foreground = ${colors.secondary}
-label-close = " Cancel"
+label-open-foreground = #2aabe2
+label-close = " Cancel"
 label-close-font = 3
 label-close-background = ${colors.background}
 label-close-foreground = ${colors.secondary}
