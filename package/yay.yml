@@ -53,6 +53,7 @@ package:
 - xclip
 - xfce4-terminal
 - xorg-server
+- xorg-xev
 - xorg-xmodmap
 - xorg-xprop
 - xorg-xrandr
