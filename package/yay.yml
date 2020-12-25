@@ -24,7 +24,6 @@ package:
 - graphviz
 - grpc
 - grpcurl
-- gvfs
 - jq
 - libreoffice-still
 - lightdm

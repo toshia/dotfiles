@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 killall -q polybar
-export PRIMARY_MONITOR=$(polybar --list-monitors | head -n1 | cut -d":" -f1)
+export PRIMARY_MONITOR=Shibafu
 
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
