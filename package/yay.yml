@@ -47,6 +47,7 @@ package:
 - rsync
 - syntax-highlighting
 - tmux
+- ttf-font-awesome
 - ttf-myrica
 - unarchiver
 - unzip-iconv
