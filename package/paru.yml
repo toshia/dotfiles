@@ -1,5 +1,5 @@
 ---
-install: yay -S --needed %s
+install: paru -S --needed %s
 package:
 - aws-cli
 - blueman
