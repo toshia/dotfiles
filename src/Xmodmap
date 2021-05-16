@@ -2,6 +2,7 @@
 remove mod4 = Super_L
 add mod3 = Super_L
 keycode 134 = Hyper_L NoSymbol Hyper_L
+!keycode 100 = Hyper_L NoSymbol Hyper_L
 
 ! swap left click and right click
 !pointer = 1 2 3
