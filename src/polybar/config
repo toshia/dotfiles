@@ -161,6 +161,7 @@ label-font = 1
 label-warn-foreground = #f00
 label-warn-underline = #ff002a
 label-underline = #ffb52a
+interval = 60
 
 [module/temperature_seminole_backup_hdd]
 type = custom/script
@@ -171,12 +172,13 @@ label-font = 1
 label-warn-foreground = #f00
 label-warn-underline = #ff002a
 label-underline = #ffb52a
+interval = 60
 
 [module/github]
 type = custom/script
 exec = ~/.config/polybar/scripts/github.sh
 format-underline = #24292e
-interval = 5
+interval = 60
 click-left = xdg-open https://www.githubstatus.com/
 
 [module/filesystem]
@@ -220,7 +222,7 @@ label-urgent-padding = 1
 
 [module/cpu]
 type = internal/cpu
-interval = 0.1
+interval = 1
 format-underline = #f90000
 format = <ramp-coreload>
 label = %percentage:2%%
