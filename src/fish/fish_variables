@@ -9,7 +9,7 @@ SETUVAR --path GOPATH:/home/toshi/go
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr__E3_81_93_E3_82_8C_E3_81_AF_E3_81_88_E3_81_88_E3_81_AD_E3_82_93_:\x2d\x2dforce
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
@@ -40,4 +40,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/toshi/\x2eProject/flutter/bin/\x1e/home/toshi/\x2eyarn/bin\x1e/home/toshi/go/bin/\x1e/home/toshi/\x2ecargo/bin
