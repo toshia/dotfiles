@@ -45,6 +45,9 @@ package:
 - rsync
 - syntax-highlighting
 - tmux
+- tree-sitter
+- tree-sitter-cli
+- tree-sitter-ruby-git
 - ttf-font-awesome
 - ttf-myrica
 - unarchiver
