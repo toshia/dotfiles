@@ -117,12 +117,13 @@ label-underline = #ffb52a
 type = internal/temperature
 interval = 1
 thermal-zone = 0
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp1_input
+hwmon-path = /sys/class/hwmon/hwmon1/temp1_input
 base-temperature = 50
 warn-temperature = 70
 label-warn-foreground = #f00
 label-warn-underline = #ff002a
-label-underline = #ffb52a
+label-underline = #f90000
+label = "%temperature-c%"
 
 [module/temperature_seminole_gpu]
 type = custom/script
@@ -154,26 +155,16 @@ format-underline = #f50af5
 interval = 1
 
 [module/temperature_seminole_ssd]
-type = custom/script
-tail = true
-exec = ~/.config/polybar/scripts/hddtemp.sh /dev/disk/by-id/ata-WDC_WDS500G2B0B-00YS70_20156J445703
-label = "%output%℃"
-label-font = 1
+type = internal/temperature
+interval = 60
+thermal-zone = 0
+hwmon-path = /sys/class/hwmon/hwmon0/temp1_input
+label = "%temperature-c%"
+base-temperature = 50
+warn-temperature = 70
 label-warn-foreground = #f00
 label-warn-underline = #ff002a
 label-underline = #ffb52a
-interval = 60
-
-[module/temperature_seminole_backup_hdd]
-type = custom/script
-tail = true
-exec = ~/.config/polybar/scripts/hddtemp.sh /dev/disk/by-id/ata-WDC_WD40EFRX-68N32N0_WD-WCC7K6LDF5E3
-label = "%output%℃"
-label-font = 1
-label-warn-foreground = #f00
-label-warn-underline = #ff002a
-label-underline = #ffb52a
-interval = 60
 
 [module/github]
 type = custom/script
@@ -187,7 +178,6 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /home
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
