@@ -4,6 +4,10 @@
  * Repository: https://github.com/dikiaap/dotfiles
  * License: MIT
  **/
+configuration {
+    font: "Myrica M 24";
+}
+
 * {
     selected-normal-foreground:  @lightfg;
     foreground:                  rgba ( 196, 202, 212, 100 % );
@@ -66,6 +70,7 @@ listview {
 element {
     border:  0;
     padding: 1px;
+    children: [ element-icon, element-text ];
 }
 element normal.normal {
     background-color: @normal-background;
