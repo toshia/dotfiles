@@ -53,6 +53,7 @@ package:
 - unarchiver
 - unzip-iconv
 - vivaldi
+- wezterm
 - xclip
 - xfce4-terminal
 - xorg-server
