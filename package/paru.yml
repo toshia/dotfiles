@@ -32,6 +32,7 @@ package:
 - lightdm-gtk-greeter
 - lsd
 - network-manager-applet
+- networkmanager-openvpn
 - nnn
 - noto-fonts-emoji
 - pavucontrol
