@@ -31,6 +31,7 @@ package:
 - lightdm
 - lightdm-gtk-greeter
 - lsd
+- network-manager-applet
 - nnn
 - noto-fonts-emoji
 - plantuml
