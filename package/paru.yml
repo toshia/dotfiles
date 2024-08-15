@@ -29,7 +29,6 @@ package:
 - lightdm
 - lightdm-gtk-greeter
 - lsd
-- nkf
 - nnn
 - noto-fonts-emoji
 - plantuml
@@ -47,11 +46,9 @@ package:
 - tmux
 - tree-sitter
 - tree-sitter-cli
-- tree-sitter-ruby-git
 - ttf-font-awesome
 - ttf-myrica
 - unarchiver
-- unzip-iconv
 - vivaldi
 - wezterm
 - xclip
