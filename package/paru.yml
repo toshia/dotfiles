@@ -48,6 +48,7 @@ package:
 - rofi
 - rsync
 - syntax-highlighting
+- texlive-binextra
 - tmux
 - tree-sitter
 - tree-sitter-cli
