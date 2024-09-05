@@ -49,6 +49,7 @@ package:
 - rsync
 - syntax-highlighting
 - texlive-binextra
+- texlive-latexrecommended
 - tmux
 - tree-sitter
 - tree-sitter-cli
