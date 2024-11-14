@@ -59,6 +59,7 @@ package:
 - ttf-font-awesome
 - ttf-myrica
 - unarchiver
+- unzip
 - vivaldi
 - wezterm
 - xclip
