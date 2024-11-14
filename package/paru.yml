@@ -15,7 +15,6 @@ package:
 - docker-compose
 - dunst
 - emacs
-- exa
 - extra/libsixel
 - fastfetch
 - fcitx-configtool
@@ -46,7 +45,6 @@ package:
 - plantuml
 - plymouth
 - polybar
-- powerpill
 - protobuf
 - pulseaudio-bluetooth
 - qt5-base
