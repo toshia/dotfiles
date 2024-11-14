@@ -2,6 +2,7 @@
 install: paru -S --needed %s
 package:
 - aws-cli
+- bat
 - blueman
 - bluez
 - bluez-utils
