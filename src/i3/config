@@ -122,9 +122,11 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 bindsym $mod+Control+4 exec "deepin-screenshot"
 
+# Mirror all (auto)
 bindsym $mod+Control+1 exec "xrandr --delmonitor Shibafu; xrandr --auto && $HOME/.config/polybar/launch.sh"
 
-bindsym $mod+Control+2 exec "xrandr --delmonitor Shibafu; xrandr --output eDP --mode 1440x900 --auto --output DisplayPort-2 --off && $HOME/.config/polybar/launch.sh"
+# Only build-in display
+bindsym $mod+Control+2 exec "xrandr --delmonitor Shibafu; xrandr --output eDP-1 --auto --output HDMI-1 --off && $HOME/.config/polybar/launch.sh"
 
 bindsym $mod+Control+3 exec "xrandr --delmonitor Shibafu; xrandr --output DP-1 --rotate left --pos 0x0  --output HDMI-1 --right-of DP-1 --rotate left  --output eDP-1 --mode 1920x1080 --pos 2160x1344 --setmonitor Shibafu auto DP-1,HDMI-1 && $HOME/.config/polybar/launch.sh Shibafu"
 
