@@ -71,3 +71,4 @@ package:
 - xorg-xrdb
 - zathura
 - zathura-pdf-poppler
+- zip
