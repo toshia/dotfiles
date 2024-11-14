@@ -31,6 +31,7 @@ package:
 - i3-wm
 - imagemagick
 - jq
+- less
 - libreoffice-still
 - lightdm
 - lightdm-gtk-greeter
