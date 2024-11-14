@@ -29,6 +29,7 @@ package:
 - grpc
 - grpcurl
 - i3-wm
+- imagemagick
 - jq
 - libreoffice-still
 - lightdm
