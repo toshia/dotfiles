@@ -20,6 +20,7 @@ package:
 - fcitx-mozc
 - fish
 - fzf
+- gimp
 - gnu-netcat
 - go
 - gobject-introspection-runtime
