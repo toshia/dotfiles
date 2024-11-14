@@ -5,6 +5,7 @@ package:
 - blueman
 - bluez
 - bluez-utils
+- btop
 - cmake
 - dconf-editor
 - deepin-screenshot
