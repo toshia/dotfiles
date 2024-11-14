@@ -15,6 +15,7 @@ package:
 - dunst
 - emacs
 - exa
+- extra/libsixel
 - fcitx-configtool
 - fcitx-im
 - fcitx-mozc
