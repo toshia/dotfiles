@@ -17,6 +17,7 @@ package:
 - emacs
 - exa
 - extra/libsixel
+- fastfetch
 - fcitx-configtool
 - fcitx-im
 - fcitx-mozc
