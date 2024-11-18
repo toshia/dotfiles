@@ -48,6 +48,7 @@ package:
 - protobuf
 - pulseaudio-bluetooth
 - qt5-base
+- rbenv
 - reflector
 - ripgrep
 - rofi
