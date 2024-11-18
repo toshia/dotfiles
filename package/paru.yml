@@ -52,6 +52,7 @@ package:
 - ripgrep
 - rofi
 - rsync
+- ruby-build
 - syntax-highlighting
 - texlive-binextra
 - texlive-latexrecommended
