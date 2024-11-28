@@ -1,5 +1,6 @@
 ---
 - Xmodmap
+- cargo
 - gemrc
 - tmux.conf
 - xprofile
