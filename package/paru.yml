@@ -54,6 +54,7 @@ package:
 - rofi
 - rsync
 - ruby-build
+- sccache
 - syntax-highlighting
 - texlive-binextra
 - texlive-latexrecommended
