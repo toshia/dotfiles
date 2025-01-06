@@ -37,6 +37,7 @@ package:
 - lightdm
 - lightdm-gtk-greeter
 - lsd
+- mise
 - network-manager-applet
 - networkmanager-openvpn
 - nnn
