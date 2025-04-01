@@ -1,4 +1,5 @@
 [tools]
-node = "22"
+java = "23"
+node = "23"
 usage = "latest"
 watchexec = "latest"
