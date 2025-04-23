@@ -61,6 +61,7 @@ package:
 - tree-sitter
 - tree-sitter-cli
 - ttf-font-awesome
+- ttf-ms-fonts
 - ttf-myrica
 - unarchiver
 - unzip
