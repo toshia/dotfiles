@@ -1,5 +1,9 @@
 [tools]
 java = "23"
 node = "23"
+ruby = "3.4.2"
 usage = "latest"
 watchexec = "latest"
+
+[settings]
+experimental = true
