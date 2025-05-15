@@ -46,6 +46,7 @@ package:
 - pipewire-alsa
 - pipewire-audio
 - pipewire-docs
+- pipewire-pulse
 - plantuml
 - plymouth
 - polybar
