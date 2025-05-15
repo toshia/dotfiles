@@ -17,9 +17,9 @@ package:
 - emacs
 - extra/libsixel
 - fastfetch
-- fcitx-configtool
-- fcitx-im
-- fcitx-mozc
+- fcitx5-configtool
+- fcitx5-im
+- fcitx5-mozc
 - fish
 - fzf
 - gimp
