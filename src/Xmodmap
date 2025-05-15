@@ -4,7 +4,7 @@ add mod3 = Super_L
 keycode 134 = Hyper_L NoSymbol Hyper_L
 
 ! hiragana-katakana to hyper
-keycode 101 = Hyper_L NoSymbol Hyper_L
+!keycode 101 = Hyper_L NoSymbol Hyper_L
 !keycode 100 = Hyper_L NoSymbol Hyper_L
 
 ! swap left click and right click
@@ -13,3 +13,6 @@ keycode 101 = Hyper_L NoSymbol Hyper_L
 clear lock
 keycode 66 = Control_L
 add control = Control_L Control_R
+
+! printScr -> Hyper
+keycode 107 = Hyper_L NoSymbol Hyper_L
