@@ -43,6 +43,7 @@ package:
 - nnn
 - noto-fonts-emoji
 - pipewire
+- pipewire-alsa
 - pipewire-audio
 - pipewire-docs
 - plantuml
