@@ -43,6 +43,7 @@ package:
 - nnn
 - noto-fonts-emoji
 - pipewire
+- pipewire-docs
 - plantuml
 - plymouth
 - polybar
