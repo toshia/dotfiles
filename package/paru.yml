@@ -42,12 +42,11 @@ package:
 - networkmanager-openvpn
 - nnn
 - noto-fonts-emoji
-- pavucontrol
+- pipewire
 - plantuml
 - plymouth
 - polybar
 - protobuf
-- pulseaudio-bluetooth
 - qt5-base
 - reflector
 - ripgrep
