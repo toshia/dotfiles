@@ -65,6 +65,7 @@ package:
 - tmux
 - tree-sitter
 - tree-sitter-cli
+- ttf-0xproto-nerd
 - ttf-dejavu
 - ttf-font-awesome
 - ttf-liberation
