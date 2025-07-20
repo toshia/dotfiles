@@ -23,6 +23,7 @@ package:
 - fcitx5-mozc
 - fish
 - fzf
+- gemini-cli
 - gimp
 - gnu-netcat
 - go
