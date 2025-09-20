@@ -41,6 +41,7 @@ package:
 - lightdm
 - lightdm-gtk-greeter
 - lsd
+- markdown-oxide-git
 - mise
 - network-manager-applet
 - networkmanager-openvpn
